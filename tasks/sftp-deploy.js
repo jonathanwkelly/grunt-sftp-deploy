@@ -90,7 +90,7 @@ module.exports = function(grunt) {
       toFile = toFile.replace(new RegExp(path.sep == '\\' ? '\\\\' : '\\/', 'g'), remoteSep);
     }
 
-    grunt.verbose.write(fromFile + ' to ' + toFile);
+    grunt.verbose.write(fromFile + ' to ' + toFile + '\n');
 
     var f_size = fs.statSync(fromFile).size;
 
